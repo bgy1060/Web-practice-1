@@ -5,14 +5,61 @@
   <meta charset="utf-8">
 </head>
 
+<style>
+
+body{
+  margin:0;
+}
+  a {
+    color:black;
+    text-decoration: none;
+  }
+
+  h1{
+    font-size: 40px;
+    text-align: center;
+    border-bottom:1px solid gray;
+    margin: 0;
+    padding:20px;
+
+  }
+  #grid ul{
+    border-right:1px solid gray;
+    width:150px;
+    margin:0;
+    padding:30px;
+
+  }
+
+  #grid{
+    display: grid;
+    grid-template-columns:250px 1fr;
+  }
+
+  @media(max-width:800px){
+   #grid{
+     display: block;
+   }
+   ul{
+     border-right:none;
+   }
+   h1 {
+     border-bottom:none;
+   }
+ }
+
+</style>
+
 <body>
+  <h1><a href="index.html"  >Ji Yeon's Web Page</a></h1>
+  <div id="grid">
   <ul>
-    <li>Culture</li>
-    <li>Sports</li>
-    <li>Foreign Community</li>
+    <li><a href="culture.html"class="saw">Culture </a></li>
+    <li><a href ="sports.html"class="saw active">Sports </a></li>
+    <li><a href="foreign community.html">Foreign Community </a></li>
   </ul>
 
-
+  <div>
   <h2>Foreign Community</h2>
   <strong><h3>"Nordic nations hold talks on preparing for future"</h3></strong>
   NORDtalks celebrate 60th anniversary of diplomatic relations
@@ -61,8 +108,10 @@
     We are much more   interested in your passion and grit.”
     The Korea JoongAng Daily sat down with the former journalist-turned-entrepreneur to ask about her experience
     with start-ups in Finland and also her take on education and innovation in Korea and Finland. The following are
-    excerpts of the interview. 
+    excerpts of the interview.
 
 </p>
+</div>
+</div>
 </body>
 </html>
